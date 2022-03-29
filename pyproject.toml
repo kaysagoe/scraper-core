@@ -1,0 +1,20 @@
+# pyproject.toml
+
+[tool.poetry]
+name = "core"
+version = "0.0.14"
+description = ""
+authors = ["Kay Sagoe"]
+
+[tool.poetry.dependencies]
+python = "<3.11,>=3.7"
+singer-sdk = "^0.4.2"
+selenium = "^4.1.0"
+beautifulsoup4 = "^4.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+
+[build-system]
+requires = ["poetry-core @ git+https://github.com/python-poetry/poetry-core.git@master"]
+build-backend = "poetry.core.masonry.api"
