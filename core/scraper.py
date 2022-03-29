@@ -21,6 +21,7 @@ class ScraperStream(Stream):
             options.add_argument('--headless')
             options.add_argument('--ignore-ssl-errors=yes')
             options.add_argument('--ignore-certificate-errors')
+            options.add_argument('--no-sandbox')
             self._driver = Chrome(options=options)
         return self._driver
 
